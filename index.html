@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Stock Web API</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Control Stock API</h1>
+    </header>
+
+    <main class="container">
+        <section id="subtitle">
+            <article>
+                <h2>Test API con datos para Sistema de Control de Stock</h2>
+            </article>
+        </section>
+
+        <section id="test-section">
+            <h2>Prueba</h2>
+            <pre id="example">
+                    <code>fetch('https://apicontrolstock.azurewebsites.net/api/producto/2')
+                        .then(response => response.json())
+                        .then(json => console.log(json))</code>
+                </pre>
+            <button class="btn btn-light" id="run-button" onclick="ShowResponse()"><strong>Respuesta</strong></button>
+            <pre id="output">
+                    <code>{}</code>
+                </pre>
+        </section>
+
+        <section id="ep-section">
+
+            <div id="recursos">
+                <h2>Recursos</h2>
+
+                <table class="table table-dark table-hover">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="https://apicontrolstock.azurewebsites.net/api/producto">/api/producto</a>
+                            </td>
+                            <td>14 Productos</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://apicontrolstock.azurewebsites.net/api/categoria">/api/categoria</a>
+                            </td>
+                            <td>2 Categorias (Hardware y Software)</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://apicontrolstock.azurewebsites.net/api/marca">/api/marca</a>
+                            </td>
+                            <td>10 marcas (5 de Hardware y 5 de Software)</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://apicontrolstock.azurewebsites.net/api/usuario">/api/usuario</a>
+                            </td>
+                            <td>5 Usuarios</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="endpoints">
+                <h2>Endpoints</h2>
+                <table class="table table-dark table-hover">
+                    <tbody>
+                        <tr>
+                            <td>GET</td>
+                            <td>api/producto</td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>api/producto/1</td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>api/producto/categoria/1</td>
+                        </tr>
+
+                        <tr>
+                            <td>GET</td>
+                            <td>api/producto/marca/Logitech</td>
+                        </tr>
+
+                        <tr>
+                            <td>POST</td>
+                            <td>api/producto</td>
+                        </tr>
+                        <tr>
+                            <td>PUT</td>
+                            <td>api/producto/1</td>
+                        </tr>
+                        <tr>
+                            <td>DELETE</td>
+                            <td>api/producto/1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>
+            <p>&copy;Samuel Rivera</p>
+        </span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
