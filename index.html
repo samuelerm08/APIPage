@@ -24,7 +24,7 @@
         <section id="test-section">
             <h2>Prueba</h2>
             <pre id="example">
-                    <code>fetch('https://apicontrolstock.azurewebsites.net/api/producto/2')
+                    <code>fetch('https://apicontrolstock.azurewebsites.net/api/producto/16')
                         .then(response => response.json())
                         .then(json => console.log(json))</code>
                 </pre>
@@ -37,7 +37,7 @@
         <section id="ep-section">
 
             <div id="recursos">
-                <h2>Recursos</h2>
+                <h2>Rutas</h2>
 
                 <table class="table table-dark table-hover">
                     <tbody>
@@ -45,7 +45,7 @@
                             <td>
                                 <a href="https://apicontrolstock.azurewebsites.net/api/producto">/api/producto</a>
                             </td>
-                            <td>14 Productos</td>
+                            <td>12 Productos</td>
                         </tr>
 
                         <tr>
@@ -59,14 +59,14 @@
                             <td>
                                 <a href="https://apicontrolstock.azurewebsites.net/api/marca">/api/marca</a>
                             </td>
-                            <td>10 marcas (5 de Hardware y 5 de Software)</td>
+                            <td>6 marcas (3 de Hardware y 3 de Software)</td>
                         </tr>
 
                         <tr>
                             <td>
                                 <a href="https://apicontrolstock.azurewebsites.net/api/usuario">/api/usuario</a>
                             </td>
-                            <td>5 Usuarios</td>
+                            <td>3 Usuarios</td>
                         </tr>
                     </tbody>
                 </table>
@@ -82,16 +82,16 @@
                         </tr>
                         <tr>
                             <td>GET</td>
-                            <td>api/producto/1</td>
+                            <td>api/producto/{id}</td>
                         </tr>
                         <tr>
                             <td>GET</td>
-                            <td>api/producto/categoria/1</td>
+                            <td>api/producto/categoria/{nombreCategoria}</td>
                         </tr>
 
                         <tr>
                             <td>GET</td>
-                            <td>api/producto/marca/Logitech</td>
+                            <td>api/producto/marca/{nombreMarca}</td>
                         </tr>
 
                         <tr>
@@ -100,11 +100,11 @@
                         </tr>
                         <tr>
                             <td>PUT</td>
-                            <td>api/producto/1</td>
+                            <td>api/producto/{id}</td>
                         </tr>
                         <tr>
                             <td>DELETE</td>
-                            <td>api/producto/1</td>
+                            <td>api/producto/{id}</td>
                         </tr>
                     </tbody>
                 </table>

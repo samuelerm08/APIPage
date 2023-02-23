@@ -1,4 +1,4 @@
-const url = "https://apicontrolstock.azurewebsites.net/api/producto/2";
+const url = "https://apicontrolstock.azurewebsites.net/api/producto/16";
 
 function ShowResponse() {
     let out = document.getElementById('output');
